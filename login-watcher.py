@@ -1,3 +1,4 @@
+# Imports
 import alerter
 import subprocess
 import re
@@ -17,7 +18,7 @@ FAILED_LOGIN_PATTERN = re.compile(r'Failed password for')
 def capture_webcam():
     current_time = get_current_time()
     subprocess.run(['fswebcam', '-r', '5', '--jpeg', '95', f'/home/scott/Desktop/projects/linux-alerter/captures/{current_time}'])
-    print('Captured that motherfucker')
+    print('Captured that guy :D')
     return current_time # name of file is current time
 
 # Function to be called after threshold is reached
